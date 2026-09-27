@@ -127,28 +127,22 @@
     }
 
     ul.lista-logros {
-      list-style-type: none;
-      padding-left: 0;
+      list-style-type: disc;
+      padding-left: 14px;
       margin-top: 2px;
+      margin-bottom: 3px;
     }
 
     ul.lista-logros li {
-      position: relative;
-      padding-left: 12px;
       margin-bottom: 2px;
       font-size: 8.2pt;
       color: #334155;
       line-height: 1.35;
     }
 
-    ul.lista-logros li::before {
-      content: "•";
-      position: absolute;
-      left: 1px;
+    ul.lista-logros li::marker {
       color: #2563eb;
-      font-weight: bold;
-      font-size: 9pt;
-      top: -1px;
+      font-size: 8pt;
     }
 
     /* HABILIDADES */
@@ -298,6 +292,21 @@
         <li>Desarrolló sistemas de facturación en punto de venta (POS) con control de arqueos de caja, lectura de códigos de barra e impresión en tirillas térmicas.</li>
       </ul>
     </div>
+
+    <!-- PROYECTO RIEGO Y PODADO ITSA -->
+    <div class="bloque-experiencia">
+      <div class="encabezado-puesto">
+        <span class="titulo-puesto">Proyecto de Automatización & I+D — Sistema de Riego y Podado Automatizado</span> | 
+        <span class="empresa">Institución Universitaria ITSA / Escenarios Deportivos Barranquilla</span>
+      </div>
+      <div class="periodo-lugar">Barranquilla, Colombia</div>
+      <div class="tecnologias-puesto">Tecnologías: Controladores (Arduino / Microcontroladores / PLC), Sensores (Humedad de Suelo, Ultrasonido), SolidWorks (Diseño 3D), Actuadores.</div>
+      <ul class="lista-logros">
+        <li>Diseñó e implementó un prototipo autónomo de riego inteligente y corte mecanizado para zonas verdes y canchas deportivas, optimizando el consumo de agua y tiempos de mantenimiento.</li>
+        <li>Integró sensores de humedad de suelo y nivel de agua para la apertura automatizada de electroválvulas solenoides únicamente bajo umbrales críticos de sequedad.</li>
+        <li>Modeló el chasis, soportes de cuchillas y ensamblajes mecánicos en <strong>SolidWorks 3D</strong>, controlando actuadores y motores mediante etapas de potencia con relés y puentes H.</li>
+      </ul>
+    </div>
   </section>
 
   <section>
@@ -312,9 +321,9 @@
       <div class="periodo-lugar">Agosto 2024 – Actualidad | Barranquilla, Colombia (Presencial)</div>
       <div class="tecnologias-puesto">Funciones: Mantenimiento Preventivo y Correctivo, Redes LAN/WLAN, Sistemas POS, Windows, Hardware.</div>
       <ul class="lista-logros">
-        <li>Administración, diagnóstico y soporte técnico de primer y segundo nivel a computadores, impresoras térmicas de punto de venta, periféricos y servidores locales.</li>
-        <li>Configuración y mantenimiento de terminales POS y estaciones de trabajo bajo Windows, asegurando operatividad continua de las tiendas físicas.</li>
-        <li>Resolución de fallas de conectividad de red local (cableado estructurado y Wi-Fi), optimizando el tiempo de respuesta ante caídas de servicio.</li>
+        <li>Administración, diagnóstico y soporte técnico de primer y segundo nivel a computadores, impresoras térmicas de punto de venta (POS), periféricos y servidores locales.</li>
+        <li>Configuración y mantenimiento de terminales POS bajo Windows, asegurando operatividad continua de las tiendas físicas.</li>
+        <li>Resolución de fallas de conectividad de red local (cableado estructurado y Wi-Fi), optimizando tiempos de respuesta.</li>
       </ul>
     </div>
 
@@ -324,10 +333,9 @@
         <span class="titulo-puesto">Asesor Comercial y Atención a Usuarios</span> | 
         <span class="empresa">Calzacosta</span>
       </div>
-      <div class="periodo-lugar">Enero 2022 – Agosto 2024 | Barranquilla, Colombia (Presencial)</div>
+      <div class="periodo-lugar">Enero 2022 – Agosto 2024 | Barranquilla, Colombia</div>
       <ul class="lista-logros">
-        <li>Identificación de requerimientos de clientes, asesoría técnica en productos y resolución asertiva de peticiones, quejas y reclamos.</li>
-        <li>Desarrollo de sólidas habilidades interpersonales, negociación bajo objetivos comerciales y gestión eficiente de inventarios de tienda.</li>
+        <li>Atención personalizada a usuarios, manejo de inventarios comerciales y resolución efectiva de solicitudes y requerimientos de clientes.</li>
       </ul>
     </div>
 
@@ -346,30 +354,27 @@
 
   <section>
     <h2>Educación y Formación Académica</h2>
+    
+    <!-- CARRERA TÉCNICA PRINCIPAL ITSA -->
     <div class="bloque-item">
-      <strong>Técnico en Tecnologías de Programas Informáticos</strong>
-      <span class="institucion">SENA — Servicio Nacional de Aprendizaje</span> | <span class="detalle">Graduado</span>
+      <strong>Técnico Profesional en Tecnologías de Programas Informáticos</strong>
+      <span class="institucion">Institución Universitaria ITSA (IUB)</span> | <span class="detalle">Graduado</span>
       <p style="color: #475569; font-size: 8pt; margin-top: 1px;">
-        Formación intensiva en desarrollo de algoritmos, programación estructurada y orientada a objetos, diseño de bases de datos relacionales, soporte de sistemas informáticos y análisis de requerimientos de software.
+        Formación técnica en programación estructurada y orientada a objetos, diseño de algoritmos, bases de datos relacionales, soporte de sistemas informáticos y análisis de requerimientos.
       </p>
     </div>
 
+    <!-- CURSOS COMPLEMENTARIOS SENA -->
     <div class="bloque-item">
-      <strong>Certificación en Arquitectura de Computadores y Redes</strong>
+      <strong>Cursos Complementarios y Certificaciones Técnicas</strong>
       <span class="institucion">SENA — Servicio Nacional de Aprendizaje</span>
       <p style="color: #475569; font-size: 8pt; margin-top: 1px;">
-        Diagnóstico de hardware, ensamble y mantenimiento de equipos, topologías de red local, configuración de routers y switches, y direccionamiento TCP/IP.
+        • <strong>Arquitectura de Computadores y Redes:</strong> Diagnóstico de hardware, ensamble, topologías de red, cableado y direccionamiento TCP/IP.<br>
+        • <strong>Electrónica Digital Secuencial:</strong> Compuertas lógicas, biestables (flip-flops), circuitos secuenciales y automatización de procesos.
       </p>
     </div>
 
-    <div class="bloque-item">
-      <strong>Certificación en Electrónica Digital Secuencial</strong>
-      <span class="institucion">SENA — Servicio Nacional de Aprendizaje</span>
-      <p style="color: #475569; font-size: 8pt; margin-top: 1px;">
-        Lógica binaria, compuertas lógicas, biestables (flip-flops), circuitos secuenciales y automatización de procesos microprogramados.
-      </p>
-    </div>
-
+    <!-- BACHILLER -->
     <div class="bloque-item">
       <strong>Bachiller Académico</strong>
       <span class="institucion">Institución Educativa Francisco José de Caldas</span> | <span class="detalle">Barranquilla, Colombia</span>
@@ -378,17 +383,13 @@
 
   <section>
     <h2>Referencias Laborales y Profesionales</h2>
-    <div class="bloque-item">
-      <strong>Ingrid Vargas</strong> — Analista de Procesos Corporativos | Teléfono: <strong>+57 300 838 4558</strong>
+    <div class="bloque-item" style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 2px;">
+      <span style="font-size: 8.2pt;"><strong>Ingrid Vargas</strong> — Analista de Procesos | Tel: <strong>+57 300 838 4558</strong></span>
+      <span style="font-size: 8.2pt;"><strong>Danilo Pérez</strong> — Profesional de Operaciones | Tel: <strong>+57 312 653 2175</strong></span>
     </div>
-    <div class="bloque-item">
-      <strong>Danilo Pérez</strong> — Profesional de Operaciones y Logística | Teléfono: <strong>+57 312 653 2175</strong>
-    </div>
-    <div class="bloque-item">
-      <strong>Juan Torres</strong> — Técnico Electricista y Telecomunicaciones | Teléfono: <strong>+57 300 539 4905</strong>
-    </div>
-    <div class="bloque-item">
-      <strong>Andrea Pertuz</strong> — Profesional Comercial y de Servicios | Teléfono: <strong>+57 300 684 5750</strong>
+    <div class="bloque-item" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+      <span style="font-size: 8.2pt;"><strong>Juan Torres</strong> — Técnico Electricista | Tel: <strong>+57 300 539 4905</strong></span>
+      <span style="font-size: 8.2pt;"><strong>Andrea Pertuz</strong> — Profesional Comercial | Tel: <strong>+57 300 684 5750</strong></span>
     </div>
   </section>
 
