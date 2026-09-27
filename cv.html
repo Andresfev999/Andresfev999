@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>CV - Andrés Felipe Echeverría Vargas | Software Architect & Full-Stack Cloud Engineer</title>
+  <title>Curriculum Vitae - Andrés Felipe Echeverría Vargas | Desarrollador Full Stack & Arquitecto de Software</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
     @page {
       size: A4;
-      margin: 11mm 14mm;
+      margin: 10mm 13mm;
     }
 
     * {
@@ -18,259 +18,174 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
       color: #1e293b;
       background: #ffffff;
-      line-height: 1.4;
-      font-size: 8.8pt;
+      line-height: 1.38;
+      font-size: 8.6pt;
       -webkit-font-smoothing: antialiased;
     }
 
     a {
-      color: #4338ca;
+      color: #1e40af;
       text-decoration: none;
-      font-weight: 500;
     }
 
     /* HEADER */
     header {
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 8px;
-      margin-bottom: 10px;
-    }
-
-    .name-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 2px;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 6px;
+      margin-bottom: 9px;
     }
 
     h1 {
-      font-size: 18.5pt;
+      font-size: 19pt;
       font-weight: 800;
       color: #0f172a;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
+      margin-bottom: 1px;
+      text-transform: uppercase;
     }
 
-    .headline {
+    .cargo {
       font-size: 10.5pt;
       font-weight: 700;
-      color: #4f46e5;
-      letter-spacing: -0.01em;
+      color: #2563eb;
+      margin-bottom: 4px;
     }
 
-    .contact-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+    .contacto {
       font-size: 8.2pt;
-      color: #475569;
-      margin-top: 4px;
-    }
-
-    .contact-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-    }
-
-    .contact-item span.dot {
-      color: #94a3b8;
-    }
-
-    /* SUMMARY */
-    .summary {
-      font-size: 8.6pt;
       color: #334155;
-      margin-bottom: 11px;
       line-height: 1.45;
-      text-align: justify;
-      background: #f8fafc;
-      border-left: 3px solid #6366f1;
-      padding: 7px 11px;
-      border-radius: 0 6px 6px 0;
     }
 
-    /* SECTIONS */
+    .contacto strong {
+      color: #0f172a;
+    }
+
+    /* SECCIONES LINEALES */
     section {
-      margin-bottom: 11px;
+      margin-bottom: 9px;
     }
 
-    .section-title {
-      font-size: 9.6pt;
+    h2 {
+      font-size: 9.5pt;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.05em;
       color: #0f172a;
       border-bottom: 1.5px solid #cbd5e1;
-      padding-bottom: 2.5px;
-      margin-bottom: 7px;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
     }
 
-    /* ITEMS */
-    .item {
+    .perfil-texto {
+      font-size: 8.4pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.42;
+    }
+
+    /* EXPERIENCIA */
+    .bloque-experiencia {
       margin-bottom: 8px;
     }
 
-    .item:last-child {
+    .bloque-experiencia:last-child {
       margin-bottom: 0;
     }
 
-    .item-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 1.5px;
+    .encabezado-puesto {
+      margin-bottom: 1px;
     }
 
-    .item-title {
+    .titulo-puesto {
       font-size: 9pt;
       font-weight: 700;
       color: #0f172a;
     }
 
-    .item-company {
+    .empresa {
+      font-size: 8.6pt;
       font-weight: 600;
-      color: #4f46e5;
+      color: #2563eb;
     }
 
-    .item-date {
+    .periodo-lugar {
       font-size: 7.8pt;
       color: #64748b;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 600;
+      font-weight: 500;
+      margin-bottom: 2px;
     }
 
-    .item-location {
+    .tecnologias-puesto {
       font-size: 7.8pt;
-      color: #94a3b8;
+      color: #475569;
+      font-style: italic;
+      margin-bottom: 2px;
     }
 
-    ul.bullets {
+    ul.lista-logros {
       list-style-type: none;
       padding-left: 0;
-      margin-top: 2.5px;
+      margin-top: 2px;
     }
 
-    ul.bullets li {
+    ul.lista-logros li {
       position: relative;
-      padding-left: 13px;
+      padding-left: 12px;
       margin-bottom: 2px;
-      font-size: 8.3pt;
+      font-size: 8.2pt;
       color: #334155;
-      line-height: 1.38;
+      line-height: 1.35;
     }
 
-    ul.bullets li::before {
-      content: "▪";
+    ul.lista-logros li::before {
+      content: "•";
       position: absolute;
-      left: 2px;
-      color: #6366f1;
-      font-size: 7.5pt;
+      left: 1px;
+      color: #2563eb;
+      font-weight: bold;
+      font-size: 9pt;
       top: -1px;
     }
 
-    /* SKILLS GRID */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5px 11px;
+    /* HABILIDADES */
+    .skills-categoria {
+      margin-bottom: 3.5px;
+      font-size: 8.2pt;
+      line-height: 1.38;
+    }
+
+    .skills-categoria strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    .skills-categoria span {
+      color: #334155;
+    }
+
+    /* EDUCACIÓN Y REFERENCIAS */
+    .bloque-item {
+      margin-bottom: 5px;
       font-size: 8.2pt;
     }
 
-    .skill-category {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 5px 9px;
-    }
-
-    .skill-category strong {
+    .bloque-item strong {
+      color: #0f172a;
+      font-weight: 700;
       display: block;
-      color: #0f172a;
-      font-size: 8pt;
-      margin-bottom: 1.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
     }
 
-    .skill-category span {
-      color: #475569;
-    }
-
-    /* TWO COLUMNS (PAGE 2) */
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-
-    .card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 7px 9px;
-      margin-bottom: 6px;
-    }
-
-    .card:last-child {
-      margin-bottom: 0;
-    }
-
-    .card-title {
-      font-weight: 700;
-      color: #0f172a;
-      font-size: 8.6pt;
-      margin-bottom: 1px;
-    }
-
-    .card-subtitle {
-      font-size: 8pt;
-      color: #4f46e5;
+    .bloque-item span.institucion {
+      color: #2563eb;
       font-weight: 600;
     }
 
-    .card-date {
-      font-size: 7.6pt;
+    .bloque-item span.detalle {
       color: #64748b;
-      font-family: 'JetBrains Mono', monospace;
-      margin-bottom: 2px;
-    }
-
-    .card-desc {
-      font-size: 8pt;
-      color: #334155;
-      line-height: 1.32;
-    }
-
-    .tags {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 3px;
-      margin-top: 1.5px;
-      margin-bottom: 1.5px;
-    }
-
-    .tag {
-      background: #eef2ff;
-      color: #4338ca;
-      font-size: 6.8pt;
-      padding: 1px 5px;
-      border-radius: 3px;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 600;
-    }
-
-    .badge-private {
-      background: #fef3c7;
-      color: #92400e;
-      font-size: 6.8pt;
-      padding: 1px 5px;
-      border-radius: 3px;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 700;
-      margin-left: 4px;
     }
 
     .page-break {
@@ -282,134 +197,83 @@
 
   <!-- ==================== PÁGINA 1 ==================== -->
   <header>
-    <div class="name-title">
-      <h1>Andrés Felipe Echeverría Vargas</h1>
-      <div class="headline">Software Architect & Full-Stack Cloud Engineer</div>
-    </div>
-    <div class="contact-bar">
-      <div class="contact-item">📍 Barranquilla, Colombia (Remoto / Global)</div>
-      <span class="dot">•</span>
-      <div class="contact-item">📱 <a href="https://wa.me/573015451037">+57 301 545 1037</a></div>
-      <span class="dot">•</span>
-      <div class="contact-item">✉️ <a href="mailto:andresfev999@gmail.com">andresfev999@gmail.com</a></div>
-      <span class="dot">•</span>
-      <div class="contact-item">🌐 <a href="https://protondev.space" target="_blank">protondev.space</a></div>
-      <span class="dot">•</span>
-      <div class="contact-item">💻 <a href="https://github.com/Andresfev999" target="_blank">github.com/Andresfev999</a></div>
+    <h1>Andrés Felipe Echeverría Vargas</h1>
+    <div class="cargo">Desarrollador de Software Full Stack | Ingeniero de Software & Arquitecto Cloud</div>
+    <div class="contacto">
+      <strong>Ubicación:</strong> Barranquilla, Atlántico, Colombia (Disponible Remoto / Presencial) | 
+      <strong>Teléfono / WhatsApp:</strong> +57 301 545 1037 | 
+      <strong>Correo Electrónico:</strong> andresfev999@gmail.com<br>
+      <strong>Portafolio Web:</strong> https://protondev.space | 
+      <strong>Perfil GitHub:</strong> https://github.com/Andresfev999
     </div>
   </header>
 
-  <div class="summary">
-    <strong>Ingeniero de Software y Arquitecto Cloud</strong> con sólida trayectoria construyendo soluciones de misión crítica para el sector empresarial, integraciones corporativas con sistemas ERP (SIESA), plataformas de facturación electrónica DIAN y productos SaaS escalables. Creador de la infraestructura cloud <strong>ProtonDev</strong>. Especialista en orquestación sobre servidores Linux VPS (Docker, Traefik v3 Reverse Proxy), microservicios de alto rendimiento (Fastify, Node.js), arquitecturas multi-tenant en PostgreSQL y desarrollo web moderno (Next.js 15, Tailwind v4). Enfocado en código limpio, alta disponibilidad operativa y seguridad integral.
-  </div>
+  <section>
+    <h2>Perfil Profesional</h2>
+    <p class="perfil-texto">
+      <strong>Desarrollador de Software e Ingeniero de Sistemas</strong> con más de 3 años de experiencia en desarrollo de aplicaciones web y móviles, soporte a infraestructuras tecnológicas, integraciones corporativas con sistemas ERP (SIESA) y automatización de procesos bajo normatividad colombiana (Facturación y Nómina Electrónica DIAN). Experto en arquitecturas Full Stack modernas utilizando JavaScript, TypeScript, Node.js, Fastify, React, Next.js, bases de datos relacionales PostgreSQL y SQL Server, y orquestación con Docker en servidores Linux VPS. Destacada orientación al logro de resultados, reducción de tiempos operativos mediante automatización, trabajo en equipo y comunicación asertiva con clientes y usuarios finales.
+    </p>
+  </section>
 
   <section>
-    <div class="section-title">Habilidades Técnicas & Stack de Ingeniería</div>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <strong>Frontend & UI Motion</strong>
-        <span>Next.js 15 (App Router/Standalone), React 19, TypeScript, Tailwind CSS v4, Framer Motion, Redux Toolkit, Responsive & A11y.</span>
-      </div>
-      <div class="skill-category">
-        <strong>Backend, APIs & Integraciones</strong>
-        <span>Node.js, Fastify, Express, Conectores ERP SIESA, DIAN Factus API (Tipo 01 / Operación 10), ImapFlow, WebSockets, JWT.</span>
-      </div>
-      <div class="skill-category">
-        <strong>Bases de Datos & Persistencia</strong>
-        <span>PostgreSQL (Aislamiento por Schemas Multi-Tenant), Supabase, Redis (Caché & PubSub), Prisma ORM, Consultas SQL Avanzadas.</span>
-      </div>
-      <div class="skill-category">
-        <strong>Cloud, VPS & DevOps</strong>
-        <span>Docker, Docker Compose, Traefik Reverse Proxy v3, Coolify PaaS, Ubuntu Linux VPS, Nginx, Let's Encrypt SSL, GitHub Actions CI/CD.</span>
-      </div>
+    <h2>Habilidades y Competencias Técnicas</h2>
+    <div class="skills-categoria">
+      <strong>Lenguajes de Programación:</strong>
+      <span>JavaScript (ES6+), TypeScript, Python, SQL, HTML5, CSS3, Bash Scripting.</span>
+    </div>
+    <div class="skills-categoria">
+      <strong>Desarrollo Frontend:</strong>
+      <span>React.js, Next.js 15 (App Router, Standalone), Tailwind CSS, Redux Toolkit, Framer Motion, Interfaces Responsivas y Accesibilidad (A11y).</span>
+    </div>
+    <div class="skills-categoria">
+      <strong>Desarrollo Backend y APIs:</strong>
+      <span>Node.js, Fastify, Express.js, APIs RESTful, Arquitectura Limpia (Clean Architecture), Microservicios, Autenticación JWT, WebSockets, ImapFlow.</span>
+    </div>
+    <div class="skills-categoria">
+      <strong>Bases de Datos:</strong>
+      <span>PostgreSQL (Arquitectura Multi-Tenant por Schemas), Microsoft SQL Server, Supabase, Redis (Caché y Mensajería), Prisma ORM.</span>
+    </div>
+    <div class="skills-categoria">
+      <strong>Infraestructura, Cloud y DevOps:</strong>
+      <span>Docker, Docker Compose, Linux VPS (Ubuntu Server), Nginx, Traefik Reverse Proxy v3, Coolify PaaS, Certificados SSL Let's Encrypt, GitHub Actions CI/CD.</span>
+    </div>
+    <div class="skills-categoria">
+      <strong>Sistemas Empresariales y Normatividad:</strong>
+      <span>Integración con ERP SIESA, Facturación Electrónica DIAN (API Factus Tipo 01 / Operación 10), Nómina Electrónica, Sistemas POS para Punto de Venta.</span>
     </div>
   </section>
 
   <section>
-    <div class="section-title">Soluciones Empresariales & Proyectos Corporativos Privados</div>
+    <h2>Experiencia Profesional & Proyectos Empresariales</h2>
 
-    <!-- SUITE SIESA -->
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Suite de Integración & Automatización ERP SIESA</span>
-          <span class="badge-private">PROYECTO EMPRESARIAL PRIVADO</span>
-        </div>
-        <div class="item-date">2024 — EN PRODUCCIÓN</div>
+    <!-- PROTONDEV -->
+    <div class="bloque-experiencia">
+      <div class="encabezado-puesto">
+        <span class="titulo-puesto">Arquitecto de Software & Desarrollador Cloud Full Stack</span> | 
+        <span class="empresa">ProtonDev Cloud Solutions</span>
       </div>
-      <div class="tags">
-        <span class="tag">Node.js</span>
-        <span class="tag">SQL Server / SIESA ERP</span>
-        <span class="tag">Scripts de Servicio</span>
-        <span class="tag">Procesamiento por Lotes</span>
-      </div>
-      <ul class="bullets">
-        <li>Desarrolló conectores de datos y scripts de servicio en producción para sincronización directa con el software contable/empresarial <strong>SIESA ERP</strong>.</li>
-        <li>Implementó cargadores automatizados de facturación directa, generador y carga masiva de terceros y validadores de consultas de descuentos de inventario.</li>
-        <li>Automatizó la extracción de queries masivas de ítems y acumulación de datos contables, reduciendo tiempos manuales de procesamiento en más del 80%.</li>
+      <div class="periodo-lugar">Enero 2024 – Actualidad | Barranquilla, Colombia (Remoto)</div>
+      <div class="tecnologias-puesto">Tecnologías: Next.js 15, TypeScript, PostgreSQL, Docker, Traefik v3, Linux VPS, Fastify, React.</div>
+      <ul class="lista-logros">
+        <li>Diseñó y desplegó la infraestructura cloud corporativa de alta disponibilidad en <strong>protondev.space</strong> sobre servidores VPS Linux, implementando enrutamiento inteligente con Traefik v3 y certificados SSL automatizados.</li>
+        <li>Desarrolló el portal <strong>Proton Apps Hub</strong> para distribución de aplicaciones móviles Android, incorporando API REST para verificación de versiones semánticas y entrega de actualizaciones Over-The-Air (OTA) con control de integridad criptográfica.</li>
+        <li>Implementó el sistema <strong>Proton ERP</strong> para administración y contabilidad, optimizando el consumo de memoria mediante contenedores Nginx Alpine independientes.</li>
+        <li>Construyó <strong>ProtonCodes</strong>, microservicio de sincronización multi-bandeja IMAP para recepción y lectura automatizada de códigos de verificación.</li>
       </ul>
     </div>
 
-    <!-- NOMINA ELECTRONICA DIAN -->
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Plataforma de Facturación & Nómina Electrónica DIAN</span>
-          <span class="badge-private">PROYECTO PRIVADO</span>
-        </div>
-        <div class="item-date">2024 — PRODUCCIÓN</div>
+    <!-- SIESA -->
+    <div class="bloque-experiencia">
+      <div class="encabezado-puesto">
+        <span class="titulo-puesto">Desarrollador de Integraciones & Automatización ERP SIESA</span> | 
+        <span class="empresa">Soluciones Empresariales Privadas</span>
       </div>
-      <div class="tags">
-        <span class="tag">TypeScript</span>
-        <span class="tag">API Factus DIAN</span>
-        <span class="tag">Generador QR/CUFE</span>
-        <span class="tag">Firmas Digitales</span>
-      </div>
-      <ul class="bullets">
-        <li>Diseñó el motor de emisión, validación técnica y transmisión de nómina electrónica y facturación reglamentaria conforme a estándares DIAN (Colombia).</li>
-        <li>Integración con API Factus (Tipo 01, Operación 10), renderizado dinámico de plantillas corporativas con código QR oficial y cálculo algorítmico de retenciones.</li>
-      </ul>
-    </div>
-
-    <!-- TALOP SAAS -->
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Talop — SaaS Multi-Tenant para Gestión Empresarial</span>
-          <span class="badge-private">PROYECTO PRIVADO</span>
-        </div>
-        <div class="item-date">2024 — EN DESARROLLO ACTIVO</div>
-      </div>
-      <div class="tags">
-        <span class="tag">Fastify</span>
-        <span class="tag">Prisma ORM</span>
-        <span class="tag">PostgreSQL Schemas</span>
-        <span class="tag">React</span>
-        <span class="tag">Tailwind v4</span>
-      </div>
-      <ul class="bullets">
-        <li>Arquitectura SaaS multi-empresa con aislamiento total de datos mediante <strong>PostgreSQL Schemas independientes</strong> por organización.</li>
-        <li>Backend ultra-rápido en Fastify con TypeScript estricto, esquemas de validación Zod y frontend reactivo con micro-interacciones fluidas a 60fps.</li>
-      </ul>
-    </div>
-
-    <!-- POS PUNTO -->
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Sistema de Punto de Venta POS & Control de Inventarios</span>
-          <span class="badge-private">PROYECTO COMERCIAL</span>
-        </div>
-        <div class="item-date">2024 — IMPLEMENTADO</div>
-      </div>
-      <div class="tags">
-        <span class="tag">Full-Stack</span>
-        <span class="tag">Impresoras Térmicas POS</span>
-        <span class="tag">Control de Caja</span>
-        <span class="tag">Inventario en Tiempo Real</span>
-      </div>
-      <ul class="bullets">
-        <li>Software POS para gestión ágil de ventas en mostrador, arqueos de caja por turno, lectura de códigos de barra y sincronización de existencias de almacén.</li>
+      <div class="periodo-lugar">Enero 2024 – Actualidad | Barranquilla, Colombia</div>
+      <div class="tecnologias-puesto">Tecnologías: Node.js, SQL Server, ERP SIESA, Procesamiento por Lotes, Windows Server.</div>
+      <ul class="lista-logros">
+        <li>Desarrolló conectores y scripts de servicio para la sincronización e ingesta masiva de datos contables directamente sobre el sistema empresarial <strong>SIESA ERP</strong>.</li>
+        <li>Creó cargadores automatizados de facturas directas y generadores de terceros, reduciendo los tiempos de digitación manual en más del 80%.</li>
+        <li>Diseñó herramientas de validación de consultas de descuentos y extracción de inventarios por lotes, eliminando errores de facturación.</li>
       </ul>
     </div>
   </section>
@@ -418,123 +282,113 @@
   <div class="page-break"></div>
 
   <section style="margin-top: 4px;">
-    <div class="section-title">Ecosistema Cloud & Infraestructura Propia (ProtonDev)</div>
+    <h2>Soluciones de Consultoría & Proyectos Especializados</h2>
 
-    <!-- PROTONDEV -->
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Fundador & Lead Cloud Architect</span> • <span class="item-company">ProtonDev Cloud Solutions</span>
-          <span class="item-location">(Producción Global)</span>
-        </div>
-        <div class="item-date">2024 — ACTUALIDAD</div>
+    <!-- NOMINA Y TALOP -->
+    <div class="bloque-experiencia">
+      <div class="encabezado-puesto">
+        <span class="titulo-puesto">Desarrollador de Software — Plataformas DIAN y SaaS Multi-Tenant</span> | 
+        <span class="empresa">Proyectos de Consultoría de Software</span>
       </div>
-      <div class="tags">
-        <span class="tag">Next.js 15 Standalone</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">Traefik v3</span>
-        <span class="tag">Docker</span>
-        <span class="tag">Coolify</span>
-        <span class="tag">Linux VPS</span>
-      </div>
-      <ul class="bullets">
-        <li>Diseñó y desplegó la infraestructura privada del ecosistema corporativo en <strong>protondev.space</strong> sobre VPS Linux con proxy inverso Traefik v3, enrutamiento multi-servicio por prefijos (<code>/apps</code>, <code>/erp</code>) y certificados SSL automatizados.</li>
-        <li>Construyó el <strong>Proton Apps Hub</strong>: plataforma de distribución móvil para APKs Android con endpoints API REST para control semántico de versiones y entregas de actualizaciones OTA (Over-The-Air) con verificación SHA-256.</li>
-        <li>Implementó la suite <strong>Proton ERP</strong> para administración y contabilidad con contenedor Nginx Alpine de alto rendimiento.</li>
-        <li>Diseñó <strong>ProtonCodes</strong>: motor de centralización y lectura automatizada de códigos de verificación multi-bandeja IMAP para distribuidores y revendedores.</li>
+      <div class="periodo-lugar">Enero 2024 – Actualidad | Colombia</div>
+      <div class="tecnologias-puesto">Tecnologías: TypeScript, Fastify, Prisma ORM, PostgreSQL Schemas, API Factus DIAN, Tailwind CSS.</div>
+      <ul class="lista-logros">
+        <li>Implementó el motor de cálculo y emisión de Nómina y Facturación Electrónica conectado con la API de Factus DIAN (Tipo 01 / Operación 10), garantizando cumplimiento legal y generación de código QR oficial.</li>
+        <li>Diseñó la arquitectura de la plataforma SaaS <strong>Talop</strong> con aislamiento completo de información por cliente mediante esquemas independientes en PostgreSQL y validación estricta con Zod.</li>
+        <li>Desarrolló sistemas de facturación en punto de venta (POS) con control de arqueos de caja, lectura de códigos de barra e impresión en tirillas térmicas.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <div class="section-title">Experiencia Laboral en Soporte TI & Operaciones</div>
+    <h2>Experiencia Laboral en Soporte TI y Operaciones</h2>
 
     <!-- CALZACOSTA IT -->
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Auxiliar de Sistemas & Soporte TI</span> • <span class="item-company">Calzacosta</span>
-          <span class="item-location">(Barranquilla, Colombia)</span>
-        </div>
-        <div class="item-date">AGO. 2024 — ACTUALIDAD</div>
+    <div class="bloque-experiencia">
+      <div class="encabezado-puesto">
+        <span class="titulo-puesto">Auxiliar de Sistemas y Soporte Técnico TI</span> | 
+        <span class="empresa">Calzacosta</span>
       </div>
-      <ul class="bullets">
-        <li>Administración y soporte preventivo/correctivo a la infraestructura de servidores locales, periféricos, equipos POS y estaciones de trabajo corporativas.</li>
-        <li>Diagnóstico y resolución de incidencias de hardware y software en sistemas operativos Windows, terminales de venta y conectividad de red local (LAN/WLAN).</li>
-        <li>Implementación de directivas de respaldo y mantenimiento que aumentaron la disponibilidad operativa de las tiendas.</li>
+      <div class="periodo-lugar">Agosto 2024 – Actualidad | Barranquilla, Colombia (Presencial)</div>
+      <div class="tecnologias-puesto">Funciones: Mantenimiento Preventivo y Correctivo, Redes LAN/WLAN, Sistemas POS, Windows, Hardware.</div>
+      <ul class="lista-logros">
+        <li>Administración, diagnóstico y soporte técnico de primer y segundo nivel a computadores, impresoras térmicas de punto de venta, periféricos y servidores locales.</li>
+        <li>Configuración y mantenimiento de terminales POS y estaciones de trabajo bajo Windows, asegurando operatividad continua de las tiendas físicas.</li>
+        <li>Resolución de fallas de conectividad de red local (cableado estructurado y Wi-Fi), optimizando el tiempo de respuesta ante caídas de servicio.</li>
       </ul>
     </div>
 
-    <!-- CALZACOSTA COMERCIAL -->
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Asesor Comercial & Soporte Técnico a Usuarios</span> • <span class="item-company">Calzacosta</span>
-          <span class="item-location">(Barranquilla, Colombia)</span>
-        </div>
-        <div class="item-date">ENE. 2022 — AGO. 2024</div>
+    <!-- CALZACOSTA ASESOR -->
+    <div class="bloque-experiencia">
+      <div class="encabezado-puesto">
+        <span class="titulo-puesto">Asesor Comercial y Atención a Usuarios</span> | 
+        <span class="empresa">Calzacosta</span>
       </div>
-      <ul class="bullets">
-        <li>Identificación de requerimientos de clientes, asesoría personalizada en catálogo de productos y resolución efectiva de quejas y reclamos.</li>
-        <li>Desarrollo de fluidez verbal, negociación asertiva y coordinación de inventarios de tienda.</li>
+      <div class="periodo-lugar">Enero 2022 – Agosto 2024 | Barranquilla, Colombia (Presencial)</div>
+      <ul class="lista-logros">
+        <li>Identificación de requerimientos de clientes, asesoría técnica en productos y resolución asertiva de peticiones, quejas y reclamos.</li>
+        <li>Desarrollo de sólidas habilidades interpersonales, negociación bajo objetivos comerciales y gestión eficiente de inventarios de tienda.</li>
+      </ul>
+    </div>
+
+    <!-- MEGATIENDAS -->
+    <div class="bloque-experiencia">
+      <div class="encabezado-puesto">
+        <span class="titulo-puesto">Cooperador Operativo y Logística de Inventarios</span> | 
+        <span class="empresa">Megatiendas</span>
+      </div>
+      <div class="periodo-lugar">Enero 2018 – Marzo 2020 | Barranquilla, Colombia</div>
+      <ul class="lista-logros">
+        <li>Control, recepción, verificación de existencias y despacho logístico de mercancías en almacén central.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <div class="section-title">Formación Académica & Certificaciones</div>
-    <div class="two-col">
-      <div class="card">
-        <div class="card-title">Técnico en Tecnologías de Programas Informáticos</div>
-        <div class="card-subtitle">SENA — Servicio Nacional de Aprendizaje</div>
-        <div class="card-date">Graduado con Éxito</div>
-        <div class="card-desc">Desarrollo de algoritmos, análisis de requisitos, lógica estructurada de programación, bases de datos y soporte de sistemas.</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Arquitectura de Computadores & Redes</div>
-        <div class="card-subtitle">SENA</div>
-        <div class="card-date">Certificación Técnica</div>
-        <div class="card-desc">Diagnóstico y ensamble de hardware, topologías de red, protocolos TCP/IP, cableado estructurado y direccionamiento.</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Electrónica Digital Secuencial</div>
-        <div class="card-subtitle">SENA</div>
-        <div class="card-date">Certificación Técnica</div>
-        <div class="card-desc">Compuertas lógicas, biestables, contadores binarios, lógica combinatoria y circuitos integrados.</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Bachiller Académico</div>
-        <div class="card-subtitle">I.E. Francisco José de Caldas</div>
-        <div class="card-date">Barranquilla, Colombia</div>
-        <div class="card-desc">Educación secundaria con enfoque en ciencias exactas y habilidades tecnológicas.</div>
-      </div>
+    <h2>Educación y Formación Académica</h2>
+    <div class="bloque-item">
+      <strong>Técnico en Tecnologías de Programas Informáticos</strong>
+      <span class="institucion">SENA — Servicio Nacional de Aprendizaje</span> | <span class="detalle">Graduado</span>
+      <p style="color: #475569; font-size: 8pt; margin-top: 1px;">
+        Formación intensiva en desarrollo de algoritmos, programación estructurada y orientada a objetos, diseño de bases de datos relacionales, soporte de sistemas informáticos y análisis de requerimientos de software.
+      </p>
+    </div>
+
+    <div class="bloque-item">
+      <strong>Certificación en Arquitectura de Computadores y Redes</strong>
+      <span class="institucion">SENA — Servicio Nacional de Aprendizaje</span>
+      <p style="color: #475569; font-size: 8pt; margin-top: 1px;">
+        Diagnóstico de hardware, ensamble y mantenimiento de equipos, topologías de red local, configuración de routers y switches, y direccionamiento TCP/IP.
+      </p>
+    </div>
+
+    <div class="bloque-item">
+      <strong>Certificación en Electrónica Digital Secuencial</strong>
+      <span class="institucion">SENA — Servicio Nacional de Aprendizaje</span>
+      <p style="color: #475569; font-size: 8pt; margin-top: 1px;">
+        Lógica binaria, compuertas lógicas, biestables (flip-flops), circuitos secuenciales y automatización de procesos microprogramados.
+      </p>
+    </div>
+
+    <div class="bloque-item">
+      <strong>Bachiller Académico</strong>
+      <span class="institucion">Institución Educativa Francisco José de Caldas</span> | <span class="detalle">Barranquilla, Colombia</span>
     </div>
   </section>
 
   <section>
-    <div class="section-title">Referencias Profesionales & Laborales</div>
-    <div class="two-col">
-      <div class="card">
-        <div class="card-title">Ingrid Vargas</div>
-        <div class="card-subtitle">Analista de Procesos Corporativos</div>
-        <div class="card-desc">Contacto: <strong>+57 300 838 4558</strong></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Danilo Pérez</div>
-        <div class="card-subtitle">Profesional de Operaciones</div>
-        <div class="card-desc">Contacto: <strong>+57 312 653 2175</strong></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Juan Torres</div>
-        <div class="card-subtitle">Técnico Electricista & Telecomunicaciones</div>
-        <div class="card-desc">Contacto: <strong>+57 300 539 4905</strong></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Andrea Pertuz</div>
-        <div class="card-subtitle">Profesional Comercial</div>
-        <div class="card-desc">Contacto: <strong>+57 300 684 5750</strong></div>
-      </div>
+    <h2>Referencias Laborales y Profesionales</h2>
+    <div class="bloque-item">
+      <strong>Ingrid Vargas</strong> — Analista de Procesos Corporativos | Teléfono: <strong>+57 300 838 4558</strong>
+    </div>
+    <div class="bloque-item">
+      <strong>Danilo Pérez</strong> — Profesional de Operaciones y Logística | Teléfono: <strong>+57 312 653 2175</strong>
+    </div>
+    <div class="bloque-item">
+      <strong>Juan Torres</strong> — Técnico Electricista y Telecomunicaciones | Teléfono: <strong>+57 300 539 4905</strong>
+    </div>
+    <div class="bloque-item">
+      <strong>Andrea Pertuz</strong> — Profesional Comercial y de Servicios | Teléfono: <strong>+57 300 684 5750</strong>
     </div>
   </section>
 
