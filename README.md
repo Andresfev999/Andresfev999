@@ -1,13 +1,13 @@
 <div align="center">
 
 # ⚡ andresfev999
-### SOFTWARE ARCHITECT & FULL-STACK CLOUD ENGINEER
+### FULL-STACK DEVELOPER & CLOUD ARCHITECT
 **BUILD • DEPLOY • SCALE**
 
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=6366F1&center=true&vCenter=true&multiline=false&width=620&lines=Software+Architect+%26+Full-Stack+Engineer;Creator+of+ProtonDev+Cloud+Ecosystem;Next.js+15+%7C+TypeScript+%7C+PostgreSQL+%7C+Docker;Building+High-Performance+Distributed+SaaS;Linux+VPS+Automation+%26+Traefik+Proxy" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=6366F1&center=true&vCenter=true&multiline=false&width=620&lines=Full-Stack+Developer+%26+Cloud+Architect;Creator+of+ProtonDev+Cloud+Ecosystem;Next.js+15+%7C+TypeScript+%7C+PostgreSQL+%7C+Docker;Building+High-Performance+Distributed+SaaS;Linux+VPS+Automation+%26+Traefik+Proxy" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -26,7 +26,7 @@
 
 ```bash
 andresfev999@protondev:~$ whoami
-andresfev999 — Software Architect & Full-Stack Cloud Engineer
+andresfev999 — Full-Stack Developer & Cloud Architect
 
 andresfev999@protondev:~$ status
 🚀 Building scalable SaaS & private cloud ecosystems
@@ -243,6 +243,6 @@ andresfev999@protondev:~$ curl -s https://protondev.space/api/developer | jq .fo
 - 📍 **Ubicación:** Colombia 🇨🇴 (Disponible para proyectos globales y remotos)
 
 <div align="center">
-  <sub>Diseñado bajo los más altos estándares de ingeniería y estética moderna © 2026 andresfev999.</sub>
+  <sub>Diseñado bajo los más altos estándares técnicos y estética moderna © 2026 andresfev999.</sub>
 </div>
 
