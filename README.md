@@ -14,6 +14,7 @@
 
 [![ProtonDev Space](https://img.shields.io/badge/🌐_ProtonDev_Ecosystem-protondev.space-6366f1?style=for-the-badge&logo=traefik&logoColor=white)](https://protondev.space)
 [![Apps Hub](https://img.shields.io/badge/📱_Apps_Hub-protondev.space%2Fapps-06b6d4?style=for-the-badge&logo=googleplay&logoColor=white)](https://protondev.space/apps)
+[![Descargar CV](https://img.shields.io/badge/📄_Descargar_CV-PDF-4338ca?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/Andresfev999/Andresfev999/raw/main/CV_Andres_Echeverria.pdf)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat_Directo-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/573015451037)
 [![GitHub](https://img.shields.io/github/followers/Andresfev999?label=Followers&style=for-the-badge&color=23272d)](https://github.com/Andresfev999)
 

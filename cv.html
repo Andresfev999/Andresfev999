@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Andrés Felipe Echeverría Vargas | Software Architect & Full-Stack Cloud Engineer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+    @page {
+      size: A4;
+      margin: 12mm 15mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.42;
+      font-size: 9pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: #4338ca;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* HEADER */
+    header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+
+    .name-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: 19pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.03em;
+    }
+
+    .headline {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #4f46e5;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.5pt;
+      color: #475569;
+      margin-top: 4px;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .contact-item span.dot {
+      color: #94a3b8;
+    }
+
+    /* SUMMARY */
+    .summary {
+      font-size: 8.8pt;
+      color: #334155;
+      margin-bottom: 12px;
+      line-height: 1.48;
+      text-align: justify;
+      background: #f8fafc;
+      border-left: 3px solid #6366f1;
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-bottom: 13px;
+    }
+
+    .section-title {
+      font-size: 10pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0f172a;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* ITEMS */
+    .item {
+      margin-bottom: 9px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-company {
+      font-weight: 600;
+      color: #4f46e5;
+    }
+
+    .item-date {
+      font-size: 8pt;
+      color: #64748b;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+
+    .item-location {
+      font-size: 8pt;
+      color: #94a3b8;
+    }
+
+    ul.bullets {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 3px;
+    }
+
+    ul.bullets li {
+      position: relative;
+      padding-left: 13px;
+      margin-bottom: 2.5px;
+      font-size: 8.5pt;
+      color: #334155;
+      line-height: 1.4;
+    }
+
+    ul.bullets li::before {
+      content: "▪";
+      position: absolute;
+      left: 2px;
+      color: #6366f1;
+      font-size: 8pt;
+      top: -1px;
+    }
+
+    /* SKILLS GRID */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 12px;
+      font-size: 8.4pt;
+    }
+
+    .skill-category {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 10px;
+    }
+
+    .skill-category strong {
+      display: block;
+      color: #0f172a;
+      font-size: 8.2pt;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .skill-category span {
+      color: #475569;
+    }
+
+    /* TWO COLUMNS (PAGE 2) */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+    }
+
+    .card:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-title {
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 8.8pt;
+      margin-bottom: 1px;
+    }
+
+    .card-subtitle {
+      font-size: 8.2pt;
+      color: #4f46e5;
+      font-weight: 600;
+    }
+
+    .card-date {
+      font-size: 7.8pt;
+      color: #64748b;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 3px;
+    }
+
+    .card-desc {
+      font-size: 8.2pt;
+      color: #334155;
+      line-height: 1.35;
+    }
+
+    .tags {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    .tag {
+      background: #eef2ff;
+      color: #4338ca;
+      font-size: 7pt;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PÁGINA 1 ==================== -->
+  <header>
+    <div class="name-title">
+      <h1>Andrés Felipe Echeverría Vargas</h1>
+      <div class="headline">Software Architect & Full-Stack Cloud Engineer</div>
+    </div>
+    <div class="contact-bar">
+      <div class="contact-item">📍 Barranquilla, Colombia (Remoto / Global)</div>
+      <span class="dot">•</span>
+      <div class="contact-item">📱 <a href="https://wa.me/573015451037">+57 301 545 1037</a></div>
+      <span class="dot">•</span>
+      <div class="contact-item">✉️ <a href="mailto:andresfev999@gmail.com">andresfev999@gmail.com</a></div>
+      <span class="dot">•</span>
+      <div class="contact-item">🌐 <a href="https://protondev.space" target="_blank">protondev.space</a></div>
+      <span class="dot">•</span>
+      <div class="contact-item">💻 <a href="https://github.com/Andresfev999" target="_blank">github.com/Andresfev999</a></div>
+    </div>
+  </header>
+
+  <div class="summary">
+    <strong>Ingeniero de Software y Arquitecto Cloud</strong> especializado en el diseño, desarrollo e implantación en producción de ecosistemas SaaS escalables, aplicaciones móviles de alto rendimiento e infraestructura sobre servidores VPS Linux. Creador y operador de la infraestructura <strong>ProtonDev</strong> (web corporativa, hub de distribución móvil OTA y ERP multi-tenant). Especialista en frontend reactivo (Next.js 15, Tailwind v4), arquitecturas de microservicios (Node.js, Fastify), persistencia relacional (PostgreSQL, Supabase) y orquestación con Docker y Traefik Reverse Proxy bajo principios de rendimiento fluido (60fps), seguridad integral y entregas continuas tipo zero-downtime.
+  </div>
+
+  <section>
+    <div class="section-title">Habilidades Técnicas & Stack de Ingeniería</div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <strong>Frontend & UI Motion</strong>
+        <span>Next.js 15 (App Router/Standalone), React 19, TypeScript, Tailwind CSS v4, Framer Motion, Redux Toolkit, Responsive & A11y.</span>
+      </div>
+      <div class="skill-category">
+        <strong>Backend & Microservicios</strong>
+        <span>Node.js, Fastify, Express, RESTful APIs, ImapFlow, WebSockets, JWT Auth, Clean Architecture, Manejo de Streams.</span>
+      </div>
+      <div class="skill-category">
+        <strong>Bases de Datos & Caché</strong>
+        <span>PostgreSQL (Aislamiento Multi-Tenant), Supabase, Redis (Caché & PubSub), Prisma ORM, Migraciones estructuradas.</span>
+      </div>
+      <div class="skill-category">
+        <strong>Cloud, VPS & DevOps</strong>
+        <span>Docker, Docker Compose, Traefik Reverse Proxy v3, Coolify PaaS, Ubuntu Linux VPS, Nginx, Let's Encrypt SSL, GitHub Actions.</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Experiencia Profesional Principal</div>
+
+    <!-- PROTONDEV -->
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Fundador & Lead Cloud Architect</span> • <span class="item-company">ProtonDev Cloud Solutions</span>
+          <span class="item-location">(Producción Global)</span>
+        </div>
+        <div class="item-date">2024 — ACTUALIDAD</div>
+      </div>
+      <div class="tags">
+        <span class="tag">Next.js 15</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Traefik v3</span>
+        <span class="tag">Coolify</span>
+        <span class="tag">Linux VPS</span>
+      </div>
+      <ul class="bullets">
+        <li>Diseñó y desplegó la infraestructura privada del ecosistema corporativo en <strong>protondev.space</strong> sobre VPS Linux con proxy inverso Traefik v3, enrutamiento multi-servicio por prefijos (<code>/apps</code>, <code>/erp</code>) y certificados SSL automatizados.</li>
+        <li>Construyó el <strong>Proton Apps Hub</strong>: plataforma de distribución móvil para APKs Android con endpoints API REST para control semántico de versiones y entregas de actualizaciones OTA (Over-The-Air) con verificación SHA-256.</li>
+        <li>Implementó la suite <strong>Proton ERP</strong> para gestión multi-tenant con esquemas aislados de PostgreSQL y contenedor Nginx Alpine de alto desempeño.</li>
+        <li>Diseñó <strong>ProtonCodes</strong>: motor de centralización y lectura automatizada de códigos de verificación multi-bandeja IMAP para distribuidores y revendedores.</li>
+      </ul>
+    </div>
+
+    <!-- CALZACOSTA IT -->
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Auxiliar de Sistemas & Soporte TI</span> • <span class="item-company">Calzacosta</span>
+          <span class="item-location">(Barranquilla, Colombia)</span>
+        </div>
+        <div class="item-date">AGO. 2024 — ACTUALIDAD</div>
+      </div>
+      <ul class="bullets">
+        <li>Administración y soporte preventivo/correctivo a la infraestructura de servidores locales, periféricos, equipos POS y estaciones de trabajo corporativas.</li>
+        <li>Diagnóstico y resolución de incidencias de hardware y software en sistemas operativos Windows, terminales de venta y conectividad de red local (LAN/WLAN).</li>
+        <li>Implementación de directivas de respaldo y mantenimiento que aumentaron la disponibilidad operativa de las tiendas.</li>
+      </ul>
+    </div>
+
+    <!-- CALZACOSTA COMERCIAL -->
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Asesor Comercial & Soporte Técnico a Usuarios</span> • <span class="item-company">Calzacosta</span>
+          <span class="item-location">(Barranquilla, Colombia)</span>
+        </div>
+        <div class="item-date">ENE. 2022 — AGO. 2024</div>
+      </div>
+      <ul class="bullets">
+        <li>Identificación de requerimientos de clientes, asesoría personalizada en catálogo de productos y resolución efectiva de quejas y reclamos.</li>
+        <li>Desarrollo de fluidez verbal, negociación asertiva y coordinación de inventarios de tienda.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== PÁGINA 2 ==================== -->
+  <div class="page-break"></div>
+
+  <section style="margin-top: 6px;">
+    <div class="section-title">Proyectos Destacados de Ingeniería de Software</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Bodega China — Plataforma E-Commerce & Logística</span> • <a href="https://github.com/Andresfev999/Bodega-China" target="_blank">github.com/Andresfev999/Bodega-China</a>
+        </div>
+        <div class="item-date">FULL-STACK</div>
+      </div>
+      <div class="tags">
+        <span class="tag">Next.js</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Tailwind CSS</span>
+      </div>
+      <ul class="bullets">
+        <li>Desarrolló una plataforma integral para catálogo mayorista, cotización arancelaria automatizada y seguimiento de envíos internacionales.</li>
+        <li>Diseñó el esquema de base de datos relacional con políticas de seguridad a nivel de fila (Row-Level Security) en Supabase.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">GoalStats Live — Dashboard de Métricas Deportivas en Tiempo Real</span> • <a href="https://github.com/Andresfev999/Goalstats-live-" target="_blank">github.com/Andresfev999/Goalstats-live-</a>
+        </div>
+        <div class="item-date">REAL-TIME</div>
+      </div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">WebSockets</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Chart.js</span>
+      </div>
+      <ul class="bullets">
+        <li>Implementó un sistema de transmisión de datos bidireccional mediante WebSockets para actualización instantánea de marcadores deportivos y probabilidades sin refresco de página.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Sistema de Automatización y Control Microprogramado</span> • <span class="item-company">SENA / Alcaldía de Barranquilla</span>
+        </div>
+        <div class="item-date">PROYECTO I+D</div>
+      </div>
+      <ul class="bullets">
+        <li>Diseño e implementación de un prototipo de automatización para riego y podado de zonas verdes en escenarios deportivos de Barranquilla, integrando sensores y controladores lógicos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Formación Académica & Certificaciones</div>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Técnico en Tecnologías de Programas Informáticos</div>
+        <div class="card-subtitle">SENA — Servicio Nacional de Aprendizaje</div>
+        <div class="card-date">Graduado con Éxito</div>
+        <div class="card-desc">Desarrollo de algoritmos, análisis de requisitos, lógica estructurada de programación, bases de datos y soporte de sistemas.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Arquitectura de Computadores & Redes</div>
+        <div class="card-subtitle">SENA</div>
+        <div class="card-date">Certificación Técnica</div>
+        <div class="card-desc">Diagnóstico y ensamble de hardware, topologías de red, protocolos TCP/IP, cableado estructurado y direccionamiento.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Electrónica Digital Secuencial</div>
+        <div class="card-subtitle">SENA</div>
+        <div class="card-date">Certificación Técnica</div>
+        <div class="card-desc">Compuertas lógicas, biestables, contadores binarios, lógica combinatoria y circuitos integrados.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Bachiller Académico</div>
+        <div class="card-subtitle">I.E. Francisco José de Caldas</div>
+        <div class="card-date">Barranquilla, Colombia</div>
+        <div class="card-desc">Educación secundaria con enfoque en ciencias exactas y habilidades tecnológicas.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Referencias Profesionales</div>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Ingrid Vargas</div>
+        <div class="card-subtitle">Analista de Procesos Corporativos</div>
+        <div class="card-desc">Contacto: <strong>+57 300 838 4558</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Danilo Pérez</div>
+        <div class="card-subtitle">Profesional de Operaciones</div>
+        <div class="card-desc">Contacto: <strong>+57 312 653 2175</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Juan Torres</div>
+        <div class="card-subtitle">Técnico Electricista & Telecomunicaciones</div>
+        <div class="card-desc">Contacto: <strong>+57 300 539 4905</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Andrea Pertuz</div>
+        <div class="card-subtitle">Profesional Comercial</div>
+        <div class="card-desc">Contacto: <strong>+57 300 684 5750</strong></div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
