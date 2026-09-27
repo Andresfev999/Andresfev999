@@ -48,8 +48,8 @@ andresfev999@protondev:~$ curl -s https://protondev.space/api/developer | jq .fo
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Andresfev999&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080b11&title_color=6366f1&icon_color=22d3ee&text_color=94a3b8" alt="GitHub Stats" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Andresfev999&theme=tokyonight&hide_border=true&background=080b11&ring=6366f1&fire=22d3ee&currStreakLabel=22d3ee" alt="GitHub Streak" width="48%" />
+<img src="https://github-stats-alpha.vercel.app/api?username=Andresfev999&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080b11&title_color=6366f1&icon_color=22d3ee&text_color=94a3b8" alt="GitHub Stats" width="48%" />
+<img src="https://streak-stats.demolab.com/?user=Andresfev999&theme=tokyonight&hide_border=true&background=080b11&ring=6366f1&fire=22d3ee&currStreakLabel=22d3ee" alt="GitHub Streak" width="48%" />
 
 </div>
 
