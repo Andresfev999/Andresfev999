@@ -220,20 +220,6 @@ andresfev999@protondev:~$ curl -s https://protondev.space/api/developer | jq .fo
 
 ---
 
-## 🐍 Contribution Activity Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Andresfev999/Andresfev999/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Andresfev999/Andresfev999/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Andresfev999/Andresfev999/output/github-contribution-grid-snake.svg" width="97%">
-</picture>
-
-</div>
-
----
-
 ## 📬 Contact & Consultoría
 
 ¿Interesado en colaborar, contratar consultoría en infraestructura o construir un producto digital?
